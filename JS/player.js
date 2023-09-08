@@ -11,45 +11,6 @@ var rawPropertyValue = (target,property) => {
 var intPropertyValue = (target,property) => {
     return parseInt(window.getComputedStyle(target).getPropertyValue(property));
 }
-// var stringPropertyValue = (target,property) => {
-//     return window.getComputedStyle(target).getPropertyValue(property).toString();
-// }
-// var floatPropertyValue = (target,property) => {
-//     return parseFloat(window.getComputedStyle(target).getPropertyValue(property));
-// }
-// function instantiateTorches(){
-//     let aux = [];
-//     for(i = 1;i<=1;i++){
-//         let torch = document.createElement("div");
-//         torch.setAttribute("class","torch");
-//         torch.setAttribute("id","t"+i);
-//         console.log("t"+i)
-        // torch.setAttribute("id","t"+1);
-//         document.getElementById("game").appendChild(torch);
-//         aux.push(torch);
-//     }
-    // for(j = 13; j<=38;j++){
-    //     let torch = document.createElement("div");
-    //     torch.setAttribute("class","torch torchFar");
-    //     torch.setAttribute("id","t"+j);
-    //     document.getElementById("game").appendChild(torch);
-    //     aux.push(torch);
-    // }
-//     return aux;
-// };
-
-// var lightRadius = instantiateTorches() ;
-
-// let checkLightPos = function(move){
-//     let res = player.checkStep(move)?"visible": "hidden";
-//     return res;
-// };
-
-// let moveThisLight = function(i,left,top,check){
-//     lightRadius[i].style.setProperty("left",left);
-//     lightRadius[i].style.setProperty("top",top);
-//     lightRadius[i].style.setProperty("visibility",check);
-// };
 
 var player = {
     // ____________________________________________
@@ -133,7 +94,6 @@ var player = {
         var keyPressed = this.event.which; //Global this para agarrar el evento del llamado en html
         console.log(event.code)
         player.movePlayer(keyPressed);
-        player.attachTorchLightToPlayer(player.leftValue,player.topValue);
     }
 }
 
