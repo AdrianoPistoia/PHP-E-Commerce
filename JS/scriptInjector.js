@@ -11,10 +11,10 @@ var JSFolderDir = "./JS/";
 // |!|--/--/--/--/--/.OBJECTS.--/--/--/--/--|!|
 // |_|--/--/--/--/--/--/--/--/--/--/--/--/--|_|
 
-var blockScr    = {
-    dom: document.createElement("script"),
-    id : "block",
-}
+// var blockScr    = {
+//     dom: document.createElement("script"),
+//     id : "block",
+// }
 var playerJS      = {
     dom: document.createElement("script"),
     id : "player",

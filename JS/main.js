@@ -5,7 +5,7 @@ var gridMap =[
                 false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,//|0| en cada linea hay 25
                 false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,//|0| en cada linea hay 25
                 false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,//|0| en cada linea hay 25
-                false,false,false,false,false,false,false,false,false,false,false,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,false,//|5|   124
+                false,true,true,true,true,true,true,true,true,true,true,true,true,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,false,//|5|   124
                 false,false,false,false,false,false,false,false,false,false,false,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,false,//|6|   149
                 false,false,false,false,false,false,false,false,false,false,false,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,true ,false,//|7|   174
                 false,false,false,false,false,false,false,false,false,false,false,true ,true ,true ,false,false,false,false,false,false,false,false,false,false,false,false,//|8|   199
@@ -67,9 +67,9 @@ var gridMap =[
                 false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,//|60|
               ]; 
               
-var intPropertyValue = (target,property) => { 
-    return parseInt(window.getComputedStyle(target).getPropertyValue(property)); 
-} 
+// var intPropertyValue = (target,property) => { 
+//     return parseInt(window.getComputedStyle(target).getPropertyValue(property)); 
+// } 
 // let gameMap = document.getElementById("game"); 
  
 
