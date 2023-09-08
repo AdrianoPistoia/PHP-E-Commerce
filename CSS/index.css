@@ -1,0 +1,955 @@
+
+:root{
+    --secondary-color:              #FFA300;
+    --contrast-color:               #1f1f1f;
+    --terciary-color:               #803C00;
+    --main-color:                   #25d7e4;
+    --font-color:                   #CCB51D;
+}
+*{
+    padding:                        0px;
+    margin:                         0px;
+}
+p{
+    letter-spacing:                 1px;
+    word-spacing:                   6px;
+}
+h1,h2,h3,p,a,li{
+    letter-spacing:                 3px;
+    font-family:                    "dragon";
+    color:                          rgb(215, 236, 255);
+}
+@font-face {
+    font-family:                    "dragon";
+    src:                            url("../fonts/dragon.ttf");
+}
+.moveThisBitch{
+    padding-left:                   250px;
+}
+.moveThisBitch2{
+    padding-left:                   220px;
+}
+.moveThisBitch3{
+    padding-left:                   180px;
+}
+.moveThisBitch4{
+    padding-left:                   125px;
+}
+.upThisBitch{
+    padding-bottom:                 5px;
+    padding-top:                    10px;
+}
+.formatA{
+    list-style-type:                none;    
+}
+.SpaGif{
+    background-repeat:              no-repeat;
+    background-image:               url("../images/Spatium.gif");
+    background-size:                cover;
+    height:                         262px;
+    width:                          701px;
+}
+html{
+    background-color:               black;
+}
+#title{
+    padding-left:                   10px;
+}
+.centrate{
+    padding-left:                   140px;
+}
+.pushDown{
+    padding-bottom:                 10px;
+}
+.centrate2{
+    padding-left:                   20px;
+}
+.aTadToTheRight{
+    padding-left:                   140px;
+}
+.kindaMoveThis{
+    padding-left:                   425px;
+    padding-top:                    15px;
+}
+#game{
+    background-image:               url("../images/tileN1.jpg");
+    position:                       relative;
+    border:                         1px solid white;
+    height:                         2800px;
+    width:                          1200px;
+    left:                           5%;
+}
+.iconContainer{
+    justify-content:                flex-start;
+    padding-bottom:                 2px;
+    align-items:                    center;
+    display:                        flex;
+}
+.icon{
+    background-repeat:              no-repeat;
+    background-color:               rgba(0,0,0,0);
+    background-size:                contain;
+    height:                         50px;
+    width:                          50px;
+}
+.big{
+    max-height:                     75px;
+    min-height:                     75px;
+    min-width:                      75px;
+    max-width:                      75px;
+    height:                         75px;
+    width:                          75px;
+}
+.mini{
+    position:                       relative;
+    height:                         30px;
+    width:                          30px;
+}
+.learning{
+    background-image:               url("../icons/read.png");
+}
+.wizard{
+    background-image:               url("../icons/wizard-staff-grey.png");
+}
+.torch{
+    background-image:               url("../images/tileN5.jpg");
+    visibility:                     hidden;
+    position:                       absolute;
+    z-index:                        3999998;
+    opacity:                        0.6;
+    height:                         50px;
+    width:                          50px;
+    left:                           50px;
+    top:                            50px;
+}
+.torchFar{
+    background-image:               url("../images/tileN4.jpg");
+}
+#checkPoint1{
+    background-repeat:              no-repeat;
+    background-image:               url("../icons/torch-snuffed-stand.png");
+    background-size:                contain;
+    position:                       absolute;
+    z-index:                        3999999;
+    height:                         50px;
+    width:                          50px;
+    left:                           500px;
+    top:                            350px;
+}
+#checkPoint2{
+    background-repeat:              no-repeat;
+    background-image:               url("../icons/torch-snuffed-stand.png");
+    background-size:                contain;
+    position:                       absolute;
+    z-index:                        3999999;
+    rotate:                         90deg;
+    height:                         50px;
+    width:                          50px;
+    left:                           450px;
+    top:                            1200px;
+}
+#checkPoint3{
+    background-repeat:              no-repeat;
+    background-image:               url("../icons/torch-snuffed-stand.png");
+    background-size:                contain;
+    position:                       absolute;
+    z-index:                        3999999;
+    height:                         50px;
+    width:                          50px;
+    left:                           300px;
+    top:                            1950px;
+}
+#player{
+    background-position:            5px;
+    background-repeat:              no-repeat;
+    background-image:               url("../icons/warrior.png");
+    border-radius:                  50% 50%;
+    position:                       relative;
+    z-index:                        4000000;
+    height:                         50px;
+    width:                          50px;
+    left:                           1150px;
+    top:                            250px;
+}
+#block{
+    background-color:               blue;
+    position:                       relative;
+    height:                         100px;
+    width:                          100px;
+    left:                           450px;
+    top:                            100px;
+}
+.Header{
+    background-color:               black;
+    justify-content:                space-between;
+    position:                       relative;
+    display:                        flex;
+    height:                         200px;
+    width:                          1200px;
+    color:                          white;
+    top:                            -50px;
+}
+.Header img{
+    border-radius:                  5%;
+    margin-left:                    55px;
+    margin-top:                     10px;
+    padding:                        4px;
+    border:                         1px solid white;
+    height:                         90%;
+}
+.Header img+div{
+    background-color:               var(--contrast-color);
+    margin-bottom:                  20px;
+    margin-left:                    50px;
+    margin-top:                     20px;
+    border:                         1px solid white;
+    width:                          550px;
+    right:                          25px;
+}
+.Header img+div>div{
+    margin-left:                    25px;
+    padding-top:                    10px;
+}
+.Header div>h1{
+    padding-bottom:                 10px;
+    padding-top:                    10px;
+    margin-left:                    20px;
+    align-self:                     flex-start;
+}
+.Tuto{
+    background-color:               var(--contrast-color);
+    margin-bottom:                  20px;
+    padding-left:                   25px;
+    margin-right:                   25px;
+    padding-top:                    25px;
+    margin-top:                     20px;
+    position:                       relative;
+    border:                         1px solid white;
+    width:                          300px;
+}
+.Tuto div>div+h2{
+    padding-left:                   20px;
+    position:                       relative;
+}
+.teacher{
+    background-image:               url("../icons/teacher.png");
+}
+.Comunicator{
+    background-image:               url("../icons/public-speaker.png");
+}
+.FastLearner{
+    background-image:               url("../icons/read.png");
+}
+.Creativity{
+    background-image:               url("../icons/team-idea.png");
+}
+.Team{
+    background-image:               url("../icons/three-friends.png");
+}
+.Movement{
+    background-image:               url("../icons/keyboard.png");
+}
+.biceps{
+    background-image:               url("../icons/biceps.png");
+}
+.HTML{
+    background-position-x:          7px;
+    background-image:               url("../icons/HTML-ico.png");
+}
+.CSS{
+    background-position-x:          7px;
+    background-image:               url("../icons/CSS-ico.png");
+}
+.JS{
+    background-position-x:          7px;
+    background-image:               url("../icons/JS-ico.png");
+}
+.Cpp{
+    background-image:               url("../icons/CIcon.png");
+}
+.CS{
+    background-image:               url("../icons/CSIcon.png");
+}
+.Java{
+    background-image:               url("../icons/JavaIcon.png");
+}
+.TSQL{
+    background-position-x:          7px;
+    background-image:               url("../icons/Base.png");
+}
+.MySQL{
+    background-position-x:          7px;
+    background-image:               url("../icons/MySQLIco.png");
+}
+.MDB{
+    background-position-x:          7px;
+    background-image:               url("../icons/MDBIco.png");
+}   
+.ESP{
+    background-image:               url("../icons/Spain.png");
+}
+.ENG{
+    background-image:               url("../icons/England.png");
+}
+.processor{
+    background-image:               url("../icons/processor.png");
+    background-size:                cover;
+    margin-left:                    20px    !important;
+    height:                         50px;
+    width:                          50px;
+}
+.mooveToTheLeft{
+    padding:                        0px 0px 0px 15px    !important;
+}
+.JPN{
+    background-image:               url("../icons/Japan.png");
+}
+.blockRight div.iconContainer{
+    margin-bottom:                  5px;
+    padding:                        0px     !important;
+}
+div.icon.stopBorders>h3 {
+    margin-left:                    30px;
+}
+.stopMarginLeft{
+    margin-left:                    0px     !important;
+}
+div.row{
+    justify-content:                space-between;
+    padding-bottom:                 7px;
+    padding-right:                  50px;
+    display:                        flex;
+    width:                          400px;
+}
+div.row>div.icon{
+    align-items:                    end;
+    display:                        flex;
+}
+div.row h3{
+    position:                       relative;
+    left:                           25px;
+}
+.Tuto p{
+    position:                       relative;
+    left:                           75px;
+}
+.Tuto p+p{
+    padding-top:                    10px;
+    left:                           5px;
+}
+.Header div>div+ul{
+    list-style-type:                none;
+    text-decoration:                none;
+    margin-right:                   25px;
+    margin-left:                    25px;
+}
+.Header div>h1+ul>li{
+    padding-bottom:                 15px;
+    font-weight:                    bolder;
+    font-size:                      medium;
+}
+.R1{
+    position:                       absolute;
+    left:                           0px;
+    top:                            25px
+}
+.R2{
+    position:                       absolute;
+    left:                           0px;
+    top:                            225px
+}
+.R3{
+    position:                       absolute;
+    left:                           0px;
+    top:                            375px
+}
+.R4{
+    position:                       absolute;
+    left:                           0px;
+    top:                            525px;
+}
+.R5{
+    position:                       absolute;
+    left:                           0px;
+    top:                            725px;
+}
+.R6{
+    position:                       absolute;
+    left:                           0px;
+    top:                            875px;
+}
+.R7{
+    position:                       absolute;
+    left:                           0px;
+    top:                            1025px;
+}
+.R8{
+    position:                       absolute;
+    left:                           0px;
+    top:                            1225px;
+}
+.R9{
+    position:                       absolute;
+    left:                           0px;
+    top:                            1375px;
+}
+.R10{
+    position:                       absolute;
+    left:                           0px;
+    top:                            1525px;
+}
+.R11{
+    position:                       absolute;
+    left:                           0px;
+    top:                            1725px;
+}
+.R12{
+    position:                       absolute;
+    left:                           0px;
+    top:                            1875px;
+}
+.R13{
+    position:                       absolute;
+    left:                           0px;
+    top:                            2025px;
+}
+.R14{
+    position:                       absolute;
+    left:                           0px;
+    top:                            2225px;
+}
+.R15{
+    position:                       absolute;
+    left:                           0px;
+    top:                            2375px
+}
+.R16{
+    position:                       absolute;
+    left:                           0px;
+    top:                            2525px;
+}
+.R17{
+    position:                       absolute;
+    left:                           0px;
+    top:                            2725px;
+}
+.L1{
+    position:                       absolute;
+    left:                           25px;
+    top:                            0px;
+}
+.L2{
+    position:                       absolute;
+    left:                           125px;
+    top:                            0px;
+}
+.L3{
+    position:                       absolute;
+    left:                           225px;
+    top:                            0px;
+}
+.L4{
+    position:                       absolute;
+    left:                           325px;
+    top:                            0px;
+}
+.L5{
+    position:                       absolute;
+    left:                           425px;
+    top:                            0px;
+}
+.L6{
+    position:                       absolute;
+    left:                           525px;
+    top:                            0px;
+}
+.L7{
+    position:                       absolute;
+    left:                           625px;
+    top:                            0px;
+}
+.L8{
+    position:                       absolute;
+    left:                           725px;
+    top:                            0px;
+}
+.L9{
+    position:                       absolute;
+    left:                           825px;
+    top:                            0px;
+}
+.L10{
+    position:                       absolute;
+    left:                           925px;
+    top:                            0px;
+}
+.L11{
+    position:                       absolute;
+    left:                           1025px;
+    top:                            0px;
+}
+.L12{
+    position:                       absolute;
+    left:                           1125px;
+    top:                            0px;
+}
+.gridRow{
+    display: none;
+    background-color:               rgba(255,0,0,0.3);
+    height:                         150px;
+    width:                          1200px;
+}
+.lastGridRow{
+    height: 75px    !important;
+}
+.gridRow2{
+    display: none;
+    background-color:               rgba(255,0,0,0.3);
+    height:                         100px;
+    width:                          1200px;
+}
+.gridCol{
+    display: none;
+    background-color:               rgba(255,0,0,0.3);
+    height:                         2800px;
+    width:                          50px;
+}
+.colorBlack{
+    padding-left:                   5px;
+    font-weight:                    bolder;
+    font-size:                      x-small     !important;
+    color:                          black;
+}
+.AbsButton{
+    background-color:               green;
+    align-items:                    center;
+    position:                       fixed;
+    display:                        flex;
+    height:                         50px;
+    cursor:                         pointer;
+    width:                          95px;
+    right:                          0px;
+    top:                            250px;
+}
+.part1{
+    position:                       relative;
+    display:                        flex;
+    width:                          100%;
+    top:                            -50px;
+}
+.pabajo{
+    z-index:                        -50000;
+}
+#screen1{
+    animation-iteration-count:      1;
+    animation-fill-mode:            forwards;
+    animation-duration:             1s;
+    background-color:               rgba(0,0,0,1);
+    position:                       absolute;
+    display:                        block;
+    height:                         1000px;
+    width:                          1200px;
+    top:                            200px;
+}
+@keyframes fade {
+    from{background-color:          rgba(0,0,0,1)}
+    to{background-color:            rgba(0,0,0,0)}
+}
+#screen2{
+    animation-iteration-count:      1;
+    animation-fill-mode:            forwards;
+    animation-duration:             1s;
+    background-color:               rgba(0,0,0,1);
+    position:                       absolute;
+    display:                        block;
+    height:                         750px;
+    width:                          1200px;
+    top:                            1200px;
+}
+#screen4{
+    animation-iteration-count:      1;
+    animation-fill-mode:            forwards;
+    animation-duration:             1s;
+    background-color:               rgba(0,0,0,1);
+    position:                       absolute;
+    display:                        block;
+    height:                         40px;
+    width:                          256px;
+    left:                           24px;
+    top:                            1820px;
+}
+#screen3{
+    animation-iteration-count:      1;
+    animation-fill-mode:            forwards;
+    animation-duration:             1s;
+    background-color:               rgba(0,0,0,1);
+    position:                       absolute;
+    display:                        block;
+    height:                         950px;
+    width:                          1200px;
+    top:                            1850px;
+}
+.blockRight{
+    background-color:               black;
+    position:                       relative;
+    height:                         850px;
+    width:                          550px;
+    left:                           50px;
+    top:                            150px;
+}
+.blockRight div:not(.icon){
+    padding-bottom:                 15px;
+    margin-bottom:                  35px;
+    padding-right:                  45px;
+    margin-right:                   25px;
+    padding-left:                   45px;
+    padding-top:                    10px;
+    margin-left:                    25px;
+    margin-top:                     20px;
+    border:                         1px solid white;
+}
+.stopBorders{
+    background-color:               var(--contrast-color);
+    border:                         none !important;
+}
+.blockRight :not(.MineroGif):not(.nube):not(.stopBorders){
+    background-color:               var(--contrast-color);
+}
+.nube{
+    background-repeat:              no-repeat;
+    background-image:               url("../images/nube.png");
+    background-size:                cover;
+    position:                       absolute;  
+    height:                         263px;
+    width:                          701px;
+    left:                           25px;
+    top:                            20px;
+}
+.nube2{
+    background-repeat:              no-repeat;
+    background-image:               url("../images/nube.png");
+    background-size:                cover;
+    position:                       absolute;  
+    height:                         263px;
+    width:                          701px;
+    left:                           25px;
+    top:                            308px;
+}
+.blockRight h2{
+    text-decoration-thickness:      2px;
+    text-decoration:                underline;
+    padding-bottom:                 20px;
+    padding-left:                   85px;
+    padding-top:                    20px;
+    position:                       relative;
+}
+.blockRight h3{
+    padding-bottom:                 10px;
+    padding-top:                    15px;
+}
+.special{
+    padding-bottom:                 5px;
+    padding-top:                    16px;
+}
+.blockRight p{
+    padding-bottom:                 5px;
+    padding-right:                  40px;
+    padding-left:                   40px;
+    padding-top:                    15px;
+}
+.MineroGif{
+    background-position-x:          -130px;
+    background-repeat:              no-repeat;
+    background-image:               url("../images/MineroGif.gif");
+    background-size:                contain;
+    height:                         850px;
+    width:                          850px;
+}
+.puertaDer{
+    background-color:               black;
+    position:                       relative;
+    height:                         50px;
+    width:                          50px;
+    left:                           0px;
+    top:                            950px;
+}
+.puertaIzq{
+    background-color:               black;
+    position:                       relative;
+    height:                         50px;
+    width:                          50px;
+    left:                           50px;
+    top:                            950px;
+}
+.Aptitudes{
+    background-color:               black;
+    padding-top:                    20px;
+    min-width:                      500px;
+    max-width:                      500px;
+    position:                       relative;
+    height:                         980px;
+    left:                           0px;
+}
+.Aptitudes div.box{
+    background-color:               var(--contrast-color);
+    padding-bottom:                 17px;
+    margin-bottom:                  5px;
+    padding-right:                  40px;
+    padding-left:                   45px;
+    margin-right:                   25px;
+    padding-top:                    15px;
+    margin-left:                    25px;
+    border:                         1px solid white;
+}
+.Aptitudes div.iconContainer.h2{
+    position:                       relative;
+    left:                           50px;
+}
+.Aptitudes div.iconContainer.h3>h3{
+    position:                       relative;
+    left:                           10px;
+}
+.Aptitudes h2{
+    text-decoration-thickness:      2px;
+    text-decoration:                underline;
+    padding-bottom:                 20px;
+    position:                       relative;
+    left:                           15px;
+}
+.Aptitudes h3{
+    margin-bottom:                  10px;
+    padding-top:                    20px;
+}
+.boldenThis{
+    font-weight:                    bolder;
+    color:                          var(--main-color);
+}
+p>span.boldenThis {
+    font-weight:                    bolder;
+    color:                          var(--secondary-color);
+}
+.Qualities{
+    height:                         350px;
+    width:                          410px;
+}
+.moveATad{
+    margin-bottom:                  10px    !important;
+    margin-left:                    60px    !important;
+    margin-top:                     5px     !important;
+}
+.wtf{
+    padding-bottom:                  1px     !important;
+}
+.lang{
+    background-image:               url("../icons/public-speaker.png");
+    background-size:                cover;
+    margin-left:                    20px    !important;
+    height:                         50px;
+    width:                          50px;
+
+}
+.parte2{
+    display:                        flex;
+    height:                         450px;
+}
+.part2padding{
+    margin:                         20px 25px 25px 25px;
+    border:                         1px solid white;
+    height:                         96.5%;
+    width:                          84%;
+}
+.wheresThePadding{
+    padding:                        25px 60px 25px 60px;
+}
+.wheresThePadding h2{
+    padding-bottom:                 10px;
+}
+.FitPls{
+    align-items:                    center;
+    display:                        flex;
+}
+.alignMadafaka{
+    flex-direction:                 column;
+    text-align:                     start;
+    display:                        flex;
+}
+h3.colorThis{
+    width: 300px;
+    padding-bottom:                 10px;
+    padding-top:                    15px;
+    color:                          var(--main-color);
+}
+h2.andalain{
+    padding-left: 5px;
+    text-decoration-thickness:      2px;
+    text-decoration:                underline
+}
+.flexTape{
+    align-items:                    center;
+    display:                        flex;
+}
+.Lab{
+    background-repeat:              no-repeat;
+    background-color:               black;
+    background-image:               url("../icons/Enano.png");
+    background-size:                cover;
+    position:                       absolute;     
+    height:                         50px;
+    width:                          50px;
+    left:                           650px;
+    top:                            1350px;
+}
+.SpaBlock{
+    max-height:                     50px;
+    max-width:                      50px;
+    overflow:                       hidden;
+    position:                       absolute;     
+    left:                           650px;
+    top:                            1500px;
+}
+.Spa{
+    background-position-x:          -10px;
+    background-position-y:          -10px;
+    background-repeat:              no-repeat;
+    background-color:               black;
+    background-image:               url("../icons/spatium.ico");
+    background-size:                cover;
+    height:                         70px;
+    width:                          70px;
+}
+.Quick{
+    background-repeat:              no-repeat;
+    background-color:               black;
+    background-image:               url("../icons/Quickapon.png");
+    background-size:                cover;
+    position:                       absolute;     
+    height:                         50px;
+    width:                          50px;
+    left:                           650px;
+    top:                            1650px;    
+}
+.captura{
+    background-repeat:              no-repeat;
+    background-size:                contain;
+    padding-bottom:                 9px;
+    height:                         142px;
+    width:                          252px;
+} 
+.cap1{
+    background-image:               url("../images/QuickaponTitleScreen.jpg");
+}
+.cap2{
+    background-image:               url("../images/QuickaponScreen1.jpg");
+}
+.cap3{
+    background-image:               url("../images/QuickaponScreen3.jpg");
+}
+.cap4{
+    background-image:               url("../images/QuickaponScreen4.jpg");
+}
+.cap5{
+    background-image:               url("../images/QuickaponScreen6.jpg");
+}
+.cap6{
+    background-image:               url("../images/Spatium1.jpg");
+}
+.cap7{
+    background-image:               url("../images/Spatium2.jpg");
+}
+.cap8{
+    background-image:               url("../images/Spatium3.jpg");
+}
+.cap9{
+    background-image:               url("../images/Spatium4.jpg");
+}
+.cap10{
+    background-image:               url("../images/Spatium5.jpg");
+}
+.ship{
+    background-position-x:          -20px;
+    background-repeat:              no-repeat;
+    background-image:               url("../icons/ship.png");
+    background-size:                cover;
+    position:                       relative;         
+    height:                         75px;
+    width:                          50px;
+    left:                           -5px;
+}
+.der2{
+    height:                         92%;
+    width:                          88.7%;
+}
+.der3{
+    height:                         94%;
+    width:                          93.2%;
+}
+.abajo{
+    height:                         82%;
+    width:                          96%;
+}
+.P2ParedDerecha{
+    background-color:               black;
+    position:                       absolute;
+    height:                         650px;
+    width:                          450px;
+    left:                           750px;
+    top:                            1200px;
+}
+.P2ParedIzquierda{
+    background-color:               black;
+    position:                       absolute;
+    height:                         1400px;
+    width:                          300px;
+    top:                            1200px;
+}
+.puerta{
+    background-color:               black;
+    position:                       absolute;
+    height:                         50px;
+    width:                          50px;
+}
+.p1{
+    left:                           300px;
+    top:                            1850px;
+}
+.p2{
+    left:                           400px;
+    top:                            1850px;
+}
+.muroP3{
+    background-color:               black;
+    position:                       absolute; 
+    height:                         600px;
+    width:                          750px;
+    left:                           450px;
+    top:                            1850px;
+}
+.mitad{
+    height:                         43.5%;
+    overflow: hidden;
+}
+/* .noBottom{
+    padding-bottom:                 0px !important;
+} */
+.pisoFinal{
+    background-color:               black;
+    position:                       absolute;
+    height:                         200px;
+    width:                          1200px;
+    top:                            2600px;
+}
+.P2bloqueIzqUp{
+    background-color:               black;
+    position:                       relative;
+    height:                         250px;
+    width:                          350px;
+    top:                            50px;
+}
+.P2bloqueIzqDown{
+    background-color:               black;
+    position:                       relative;
+    height:                         500px;
+    width:                          300px;
+    left:                           550px;
+    top:                            50px;
+}
