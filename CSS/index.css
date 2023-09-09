@@ -23,153 +23,16 @@ h1,h2,h3,p,a,li{
     font-family:                    "dragon";
     src:                            url("../fonts/dragon.ttf");
 }
-.moveThisBitch{
-    padding-left:                   250px;
-}
-.moveThisBitch2{
-    padding-left:                   220px;
-}
-.moveThisBitch3{
-    padding-left:                   180px;
-}
-.moveThisBitch4{
-    padding-left:                   125px;
-}
-.upThisBitch{
-    padding-bottom:                 5px;
-    padding-top:                    10px;
-}
-.formatA{
-    list-style-type:                none;    
-}
-.SpaGif{
-    background-repeat:              no-repeat;
-    background-image:               url("../images/Spatium.gif");
-    background-size:                cover;
-    height:                         262px;
-    width:                          701px;
-}
 html{
     background-color:               black;
-}
-#title{
-    padding-left:                   10px;
-}
-.centrate{
-    padding-left:                   140px;
-}
-.pushDown{
-    padding-bottom:                 10px;
-}
-.centrate2{
-    padding-left:                   20px;
-}
-.aTadToTheRight{
-    padding-left:                   140px;
-}
-.kindaMoveThis{
-    padding-left:                   425px;
-    padding-top:                    15px;
 }
 #game{
     background-image:               url("../images/tileN1.jpg");
     position:                       relative;
     border:                         1px solid white;
-    height:                         2800px;
-    width:                          1200px;
+    height:                         1920px;
+    width:                          1280px;
     left:                           5%;
-}
-.iconContainer{
-    justify-content:                flex-start;
-    padding-bottom:                 2px;
-    align-items:                    center;
-    display:                        flex;
-}
-.icon{
-    background-repeat:              no-repeat;
-    background-color:               rgba(0,0,0,0);
-    background-size:                contain;
-    height:                         50px;
-    width:                          50px;
-}
-.big{
-    max-height:                     75px;
-    min-height:                     75px;
-    min-width:                      75px;
-    max-width:                      75px;
-    height:                         75px;
-    width:                          75px;
-}
-.mini{
-    position:                       relative;
-    height:                         30px;
-    width:                          30px;
-}
-.learning{
-    background-image:               url("../icons/read.png");
-}
-.wizard{
-    background-image:               url("../icons/wizard-staff-grey.png");
-}
-.torch{
-    background-image:               url("../images/tileN5.jpg");
-    visibility:                     hidden;
-    position:                       absolute;
-    z-index:                        3999998;
-    opacity:                        0.6;
-    height:                         50px;
-    width:                          50px;
-    left:                           50px;
-    top:                            50px;
-}
-.torchFar{
-    background-image:               url("../images/tileN4.jpg");
-}
-#checkPoint1{
-    background-repeat:              no-repeat;
-    background-image:               url("../icons/torch-snuffed-stand.png");
-    background-size:                contain;
-    position:                       absolute;
-    z-index:                        3999999;
-    height:                         50px;
-    width:                          50px;
-    left:                           500px;
-    top:                            350px;
-}
-#checkPoint2{
-    background-repeat:              no-repeat;
-    background-image:               url("../icons/torch-snuffed-stand.png");
-    background-size:                contain;
-    position:                       absolute;
-    z-index:                        3999999;
-    rotate:                         90deg;
-    height:                         50px;
-    width:                          50px;
-    left:                           450px;
-    top:                            1200px;
-}
-#checkPoint3{
-    background-repeat:              no-repeat;
-    background-image:               url("../icons/torch-snuffed-stand.png");
-    background-size:                contain;
-    position:                       absolute;
-    z-index:                        3999999;
-    height:                         50px;
-    width:                          50px;
-    left:                           300px;
-    top:                            1950px;
-}
-#player{
-    background-position:            5px;
-    background-repeat:              no-repeat;
-    background-image:               url("../icons/warrior.png");
-    border-radius:                  50% 50%;
-    position:                       relative;
-    z-index:                        4000000;
-    height:                         50px;
-    width:                          50px;
-    left:                           1150px;
-    top:                            250px;
 }
 #block{
     background-color:               blue;
