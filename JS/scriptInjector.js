@@ -21,7 +21,7 @@ var playerJS      = {
 }
 var main      = {
     dom: document.createElement("script"),
-    id : "main",
+    id : "colisionMap",
 }
 // window.addEventListener("keydown", function(e) {
 //     if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {

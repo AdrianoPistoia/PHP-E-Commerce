@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,6 @@
 <body>
     <div id="game">
         <div id="player"></div>
-        
     </div>
     <script src="./JS/scriptInjector.js"></script>
 </body>
