@@ -1,5 +1,5 @@
 // √ 	─
-let playerDom = datachocument.getElementById("player");
+let playerDom = document.getElementById("player");
 
 const _Directionals = ["ArrowLeft","ArrowUp","ArrowRight","ArrowDown","KeyA","KeyW","KeyD","KeyS"];
 function getGridPosition (target){
