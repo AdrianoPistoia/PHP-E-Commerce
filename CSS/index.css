@@ -29,8 +29,8 @@ html{
     background-image:               url("../images/tileN1.jpg");
     position:                       relative;
     border:                         1px solid white;
-    height:                         1920px;
-    width:                          1280px;
+    height:                         1900px;
+    width:                          1200px;
     left:                           5%;
 }
 #block{
@@ -401,6 +401,11 @@ div.row h3{
 }
 .pabajo{
     z-index:                        -50000;
+}
+#player{
+    left:                       200px;
+    top:                        300px;
+    background-color: red;
 }
 #screen1{
     animation-iteration-count:      1;
